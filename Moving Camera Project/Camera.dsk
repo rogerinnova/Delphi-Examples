@@ -16,28 +16,40 @@ File_13=TSourceModule,'Z:\TrillianShare\HgRepository\InnovaSolutionsDelphi\Delph
 File_14=TSourceModule,'Z:\TrillianShare\HgRepository\InnovaSolutionsDelphi\Delphi Projects\DelphiXE2Projects\FireMonkey\Components\ComponentDesignTBitbutton.pas',0,1,1,1,1,0,0,,
 
 [Modules]
-Module0=Z:\TrillianShare\HgRepository\TeamDagamer\ThreeDLibs\FlyingCamera.pas
-Module1=Z:\TrillianShare\HgRepository\TeamDagamer\Moving Camera Project\Play3dFormWithCameraJosh.pas
-Module2=default.htm
+Module0=Z:\TrillianShare\GitHubRepository\Delphi-Examples\Moving Camera Project\Play3dFormWithMovingCamera.pas
+Module1=Z:\TrillianShare\GitHubRepository\Delphi-Examples\Moving Camera Project\ThreeDLibs\ReadMe Flting Camera.txt
+Module2=Z:\TrillianShare\GitHubRepository\Delphi-Examples\Moving Camera Project\ThreeDLibs\FlyingCamera.pas
 Count=3
 EditWindowCount=1
 
-[Z:\TrillianShare\HgRepository\TeamDagamer\ThreeDLibs\FlyingCamera.pas]
-ModuleType=TSourceModule
-FormState=0
-FormOnTop=0
-
-[Z:\TrillianShare\HgRepository\TeamDagamer\Moving Camera Project\Play3dFormWithCameraJosh.pas]
+[Z:\TrillianShare\GitHubRepository\Delphi-Examples\Moving Camera Project\Play3dFormWithMovingCamera.pas]
 ModuleType=TSourceModule
 FormState=1
 FormOnTop=1
 
-[default.htm]
-ModuleType=TURLModule
+[Z:\TrillianShare\GitHubRepository\Delphi-Examples\Moving Camera Project\ThreeDLibs\ReadMe Flting Camera.txt]
+ModuleType=TSourceModule
+
+[Z:\TrillianShare\GitHubRepository\Delphi-Examples\Moving Camera Project\ThreeDLibs\FlyingCamera.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[Z:\TrillianShare\HgRepository\TeamDagamer\ThreeDLibs\FlyingCamera.pas]
+FormState=0
+FormOnTop=0
+
+[Z:\TrillianShare\HgRepository\TeamDagamer\Moving Camera Project\Play3dFormWithCameraJosh.pas]
+FormState=1
+FormOnTop=0
+
+[Z:\TrillianShare\GitHubRepository\Delphi-Examples\Moving Camera Project\ThreeDLibs\ThreeDUtils.pas]
+FormState=0
+FormOnTop=0
 
 [EditWindow0]
 ViewCount=3
-CurrentEditView=Z:\TrillianShare\HgRepository\TeamDagamer\ThreeDLibs\FlyingCamera.pas
+CurrentEditView=Z:\TrillianShare\GitHubRepository\Delphi-Examples\Moving Camera Project\Play3dFormWithMovingCamera.pas
 View0=0
 View1=1
 View2=2
@@ -49,20 +61,20 @@ State=0
 Left=0
 Top=0
 Width=10000
-Height=9187
+Height=9207
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=10000
-ClientHeight=9187
+ClientHeight=9207
 DockedToMainForm=1
 BorlandEditorCodeExplorer=BorlandEditorCodeExplorer@EditWindow0
 TopPanelSize=0
 LeftPanelSize=1898
 LeftPanelClients=PropertyInspector,DockSite3
-LeftPanelData=00000800010100000000A516000000000000016A070000000000000100000000580E000009000000446F636B536974653301000000004E1C00001100000050726F7065727479496E73706563746F72FFFFFFFF
+LeftPanelData=00000800010100000000B416000000000000016A070000000000000100000000580E000009000000446F636B53697465330100000000621C00001100000050726F7065727479496E73706563746F72FFFFFFFF
 RightPanelSize=2000
 RightPanelClients=DockSite2,DockSite4
-RightPanelData=00000800010100000000A51600000000000001D00700000000000001000000004612000009000000446F636B536974653201000000004E1C000009000000446F636B5369746534FFFFFFFF
+RightPanelData=00000800010100000000B41600000000000001D00700000000000001000000004612000009000000446F636B53697465320100000000621C000009000000446F636B5369746534FFFFFFFF
 BottomPanelSize=1523
 BottomPanelClients=DockSite1,MessageView
 BottomPanelData=0000080001020100000009000000446F636B5369746531D43000000000000002F3050000000000000100000000D43000000F0000004D65737361676556696577466F726DFFFFFFFF
@@ -71,12 +83,30 @@ BottomMiddlePanelClients=DockSite0,GraphDrawingModel
 BottomMiddelPanelData=0000080001020200000009000000446F636B536974653010000000477261706844726177696E67566965779A1D00000000000002F106000000000000FFFFFFFF
 
 [View0]
-CustomEditViewType=TWelcomePageView
-WelcomePageURL=bds:/default.htm
+CustomEditViewType=TEditView
+Module=Z:\TrillianShare\GitHubRepository\Delphi-Examples\Moving Camera Project\ThreeDLibs\FlyingCamera.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=Z:\TrillianShare\GitHubRepository\Delphi-Examples\Moving Camera Project\ThreeDLibs\FlyingCamera.pas
 
 [View1]
 CustomEditViewType=TEditView
-Module=Z:\TrillianShare\HgRepository\TeamDagamer\Moving Camera Project\Play3dFormWithCameraJosh.pas
+Module=Z:\TrillianShare\GitHubRepository\Delphi-Examples\Moving Camera Project\ThreeDLibs\ReadMe Flting Camera.txt
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=Z:\TrillianShare\GitHubRepository\Delphi-Examples\Moving Camera Project\ThreeDLibs\ReadMe Flting Camera.txt
+
+[View2]
+CustomEditViewType=TEditView
+Module=Z:\TrillianShare\GitHubRepository\Delphi-Examples\Moving Camera Project\Play3dFormWithMovingCamera.pas
 CursorX=1
 CursorY=1
 TopLine=1
@@ -84,17 +114,6 @@ LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=Borland.FormDesignerView
-
-[View2]
-CustomEditViewType=TEditView
-Module=Z:\TrillianShare\HgRepository\TeamDagamer\ThreeDLibs\FlyingCamera.pas
-CursorX=1
-CursorY=74
-TopLine=57
-LeftCol=1
-Elisions=
-Bookmarks=
-EditViewName=Z:\TrillianShare\HgRepository\TeamDagamer\ThreeDLibs\FlyingCamera.pas
 
 [Watches]
 Count=0
@@ -110,19 +129,18 @@ State=0
 Left=0
 Top=0
 Width=3820
-Height=1098
+Height=1077
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3820
-ClientHeight=1098
+ClientHeight=1077
 TBDockHeight=213
 LRDockWidth=13602
 Dockable=1
 StayOnTop=0
 
 [Breakpoints]
-Count=1
-Breakpoint0='Z:\TrillianShare\HgRepository\TeamDagamer\ThreeDLibs\FlyingCamera.pas',74,'',0,1,'',1,0,0,'',1,'','','',0,''
+Count=0
 
 [EmbarcaderoWin32Debugger_AddressBreakpoints]
 Count=0
@@ -149,7 +167,7 @@ MaxWidth=8930
 MaxHeight=8526
 ClientWidth=10000
 ClientHeight=9776
-BottomPanelSize=8828
+BottomPanelSize=8848
 BottomPanelClients=EditWindow0
 BottomPanelData=0000080000000000000000000000000000000000000000000000000100000000000000000C0000004564697457696E646F775F30FFFFFFFF
 
@@ -162,11 +180,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=4339
+Height=4319
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=4339
+ClientHeight=4319
 TBDockHeight=5904
 LRDockWidth=2352
 Dockable=1
@@ -179,14 +197,14 @@ Visible=1
 Docked=1
 State=0
 Left=0
-Top=21
+Top=23
 Width=10000
-Height=1372
+Height=1352
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=10000
-ClientHeight=1372
-TBDockHeight=1372
+ClientHeight=1352
+TBDockHeight=1352
 LRDockWidth=2773
 Dockable=1
 StayOnTop=0
@@ -312,7 +330,7 @@ Visible=1
 Docked=1
 State=0
 Left=0
-Top=397
+Top=399
 Width=1898
 Height=3506
 MaxLeft=-1
@@ -324,6 +342,11 @@ LRDockWidth=1898
 Dockable=1
 StayOnTop=0
 SplitPos=111
+
+[PropInspDesignerSelection]
+ArrangeBy=Name
+SelectedItem=Cursor,Camera
+ExpandedItems=Position=1,RotationAngle=0,Scale=1,MaterialSource=0,"LiveBindings Designer=0",Border=0,BorderIcons=0,FormFactor=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -394,11 +417,11 @@ State=0
 Left=0
 Top=0
 Width=3820
-Height=1098
+Height=1077
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3820
-ClientHeight=1098
+ClientHeight=1077
 TBDockHeight=407
 LRDockWidth=4953
 Dockable=1
@@ -413,11 +436,11 @@ State=0
 Left=0
 Top=0
 Width=3820
-Height=1098
+Height=1077
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3820
-ClientHeight=1098
+ClientHeight=1077
 TBDockHeight=213
 LRDockWidth=7406
 Dockable=1
@@ -436,11 +459,11 @@ State=0
 Left=0
 Top=0
 Width=3820
-Height=1098
+Height=1077
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3820
-ClientHeight=1098
+ClientHeight=1077
 TBDockHeight=1535
 LRDockWidth=3484
 Dockable=1
@@ -455,11 +478,11 @@ State=0
 Left=0
 Top=0
 Width=3820
-Height=1098
+Height=1077
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3820
-ClientHeight=1098
+ClientHeight=1077
 TBDockHeight=2063
 LRDockWidth=3484
 Dockable=1
@@ -577,11 +600,11 @@ State=0
 Left=0
 Top=0
 Width=3820
-Height=1098
+Height=1077
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3820
-ClientHeight=1098
+ClientHeight=1077
 TBDockHeight=1545
 LRDockWidth=8742
 Dockable=1
@@ -603,11 +626,11 @@ State=0
 Left=0
 Top=0
 Width=1898
-Height=3567
+Height=3547
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1898
-ClientHeight=3567
+ClientHeight=3547
 TBDockHeight=3679
 LRDockWidth=1898
 Dockable=1
@@ -687,14 +710,14 @@ Visible=0
 Docked=1
 State=0
 Left=0
-Top=21
+Top=23
 Width=3820
-Height=1372
+Height=1352
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3820
-ClientHeight=1372
-TBDockHeight=1372
+ClientHeight=1352
+TBDockHeight=1352
 LRDockWidth=3820
 Dockable=1
 StayOnTop=0
@@ -711,13 +734,13 @@ Visible=1
 Docked=1
 State=0
 Left=0
-Top=21
+Top=23
 Width=2000
-Height=4614
+Height=4593
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=4614
+ClientHeight=4593
 TBDockHeight=6911
 LRDockWidth=2000
 Dockable=1
@@ -735,13 +758,13 @@ Visible=1
 Docked=1
 State=0
 Left=0
-Top=21
+Top=23
 Width=1898
-Height=3567
+Height=3547
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1898
-ClientHeight=3567
+ClientHeight=3547
 TBDockHeight=6911
 LRDockWidth=1898
 Dockable=1
@@ -759,7 +782,7 @@ Visible=1
 Docked=1
 State=0
 Left=0
-Top=500
+Top=502
 Width=2000
 Height=2459
 MaxLeft=-1
