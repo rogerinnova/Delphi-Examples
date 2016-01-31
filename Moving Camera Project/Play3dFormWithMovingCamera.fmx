@@ -1,0 +1,146 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  Color = claSteelblue
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = Form3DCreate
+  DesignerMasterStyle = 0
+  object Light1: TLight
+    Color = claWhite
+    LightType = Directional
+    SpotCutOff = 60.000000000000000000
+    SpotExponent = 4.000000000000000000
+    Position.X = -9.470335960388184000
+    Position.Y = 7.536616325378418000
+    Position.Z = -1.000000000000000000
+    RotationAngle.X = 22.304687500000000000
+    RotationAngle.Y = 33.628841400146480000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    Quanternion = 
+      '(-0.0733455717563629,-0.283809334039688,0.178971618413925,-0.939' +
+      '17053937912)'
+  end
+  object LightMaterialSource1: TLightMaterialSource
+    Diffuse = claWhite
+    Ambient = xFF202020
+    Emissive = claSpringgreen
+    Specular = xFF606060
+    Shininess = 30
+    Left = 304
+    Top = 224
+  end
+  object Sphere1: TSphere
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    MaterialSource = LightMaterialSource1
+  end
+  object Cone1: TCone
+    Position.X = 9.000000000000000000
+    Position.Y = -0.304488897323608400
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    MaterialSource = LightMaterialSource2
+  end
+  object Cube2: TCube
+    Position.X = -8.805527687072754000
+    Position.Y = 1.744667768478394000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    MaterialSource = LightMaterialSource2
+  end
+  object Cylinder1: TCylinder
+    Position.X = -1.832268357276917000
+    Position.Y = -0.332663059234619100
+    Position.Z = 20.000000000000000000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    MaterialSource = LightMaterialSource2
+  end
+  object Disk1: TDisk
+    Position.X = 0.791439771652221700
+    Position.Y = 5.347513198852539000
+    Width = 1.000000000000000000
+    Height = 0.001000000047497451
+    Depth = 1.000000000000000000
+    SubdivisionsCap = 1
+    MaterialSource = LightMaterialSource2
+  end
+  object RoundCube1: TRoundCube
+    Position.X = 2.219485759735107000
+    Position.Y = -7.000000000000000000
+    RotationAngle.Y = 309.755279541015600000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    MaterialSource = LightMaterialSource2
+    Quanternion = '(0,0.424552798271179,0,-0.905403196811676)'
+  end
+  object Timer1: TTimer
+    Interval = 6000
+    Left = 536
+    Top = 40
+  end
+  object LightMaterialSource2: TLightMaterialSource
+    Diffuse = claWhite
+    Ambient = xFF202020
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 30
+    Left = 312
+    Top = 232
+  end
+  object Cube3: TCube
+    Position.X = -5.000000000000000000
+    Position.Y = 5.000000000000000000
+    Position.Z = 15.000000000000000000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    MaterialSource = LightMaterialSource1
+  end
+  object Cube4: TCube
+    Position.X = -5.000000000000000000
+    Position.Y = 10.000000000000000000
+    Position.Z = 15.000000000000000000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    MaterialSource = LightMaterialSource1
+  end
+  object Cube5: TCube
+    Position.X = -20.000000000000000000
+    Position.Z = 15.000000000000000000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    MaterialSource = LightMaterialSource1
+  end
+  object Cube1: TCube
+    Position.X = -5.000000000000000000
+    Position.Y = -5.000000000000000000
+    Position.Z = 15.000000000000000000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    MaterialSource = LightMaterialSource1
+  end
+  object Sphere2: TSphere
+    Position.Y = 25.000000000000000000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    MaterialSource = LightMaterialSource1
+  end
+end
