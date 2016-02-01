@@ -5,7 +5,7 @@ This looks at a first try at a first person shooter game in Delphi 3D
 
 FlyingCammera.pas
 contains a Camera Object which you can "fly" or
-"step" arround your 3D Sceen.
+"step" arround your 3D Screen.
 
 To Implement
  1.  Add  FlyingCamera to the uses clause
