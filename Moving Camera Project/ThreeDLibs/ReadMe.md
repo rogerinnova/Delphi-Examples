@@ -8,25 +8,27 @@ contains a Camera Object which you can "fly" or
 "step" arround your 3D Sceen.
 
 To Implement
-1  Add  FlyingCamera to the uses clause
-2  Simply add a TFlyingCamera "FlyCam" in the private section of your 3D form,
-   and
-3  Add the following to the Forms OnCreate Event
+ 1.  Add  FlyingCamera to the uses clause
+ 2.  Simply add a TFlyingCamera "FlyCam" in the private section of your 3D form,
+ 3.  Add the following to the Forms OnCreate Event
 
+```Delphi
 procedure TForm1.Form3DCreate(Sender: TObject);
 begin
  FlyCam:=AssignFlyingCameraToForm(Self,5,26,-29);
  FlyCam.StepFormat:=true;
  //FlyCam.Speed:=0.1;
 end;
+```
 
 The Function
 AssignFlyingCameraToForm(A3dForm: TForm3D; AX,AY,AZ:Single): TFlyingCamera;
-1 Adds a Camera at AX,AY,AZ and points it to the point 0,0,0
-2 Sets A3dForm Camera Property
-3 Sets Forms UseDesign Camera  to false
-4 Allocates the OnKeyDown Event (if Unassigned)
+1. Adds a Camera at AX,AY,AZ and points it to the point 0,0,0
+2. Sets A3dForm Camera Property
+3. Sets Forms UseDesign Camera  to false
+4. Allocates the OnKeyDown Event (if Unassigned)
 
+```
 The Cammera Controls then become
 Key Controls
   'W', 'w': MoveForward(0.3);
@@ -47,7 +49,7 @@ Key Controls
   vkDelete: Decrease Spead Increment
   vkAdd:    Increase Spead;
   vkSubtract: Decrease Spead;
-
+```
 
 
 ThreeDLibs.pas
