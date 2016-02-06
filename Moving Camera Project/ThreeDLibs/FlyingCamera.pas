@@ -71,11 +71,6 @@ end;
 
 { TFlyingCamera }
 procedure TFlyingCamera.AlignCammeraToOrigin;
-Var
-  SinA, CosA: Double;
-  CurPoint,CurYPt,CurXpt,CurAngle:TPoint3D;
-  Hyp,HypR1:Single;
-
 begin
    RotationAngle.Point:=AngleToToOrigin(Position.Point);
    UpdateHeadUpDisplay;
@@ -96,8 +91,7 @@ begin
 end;
 
 constructor TFlyingCamera.Create(A3dForm: TComponent);
-Var
-  SinA, CosA, ZDash: Double;
+
 begin
   if not(A3dForm is TForm3D) then
     raise Exception.Create('Must have a 3D Form');
@@ -232,20 +226,9 @@ procedure TFlyingCamera.MoveForward(ADistance: Real);
 
 Var
   LPositionPoint: TPoint3D;
-  // Var
-  // cosx, sinx, cosy, siny: Double;
-  // cosz,sinz:double;
 begin
-  { SinCos(DegToRad(RotationAngle.X), sinx, cosx);
-    SinCos(DegToRad(RotationAngle.Y), siny, cosy);
-    // SinCos(RotationAngle.Z,sinz,cosz);
-    Position.X := Position.X + ADistance * siny * cosx;
-    Position.Y := Position.Y - ADistance * sinx * cosy;
-    Position.Z := Position.Z + ADistance * cosx * cosy;
-  }
   LPositionPoint := Position.Point;
   MoveControlAlongLocalZAxis(Self, LPositionPoint, ADistance);
-  //MoveAlongLocalZAxis(RotationAngle, LPositionPoint, ADistance);
   StartLocationTrackingAnimation(Self, 'Position', LPositionPoint,
     FSpeedTimer.Interval / 1000);
   UpdateHeadUpDisplay;
