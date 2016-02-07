@@ -23,10 +23,11 @@ end;
 
 The Function
 AssignFlyingCameraToForm(A3dForm: TForm3D; AX,AY,AZ:Single): TFlyingCamera;
-1. Adds a Camera at AX,AY,AZ and points it to the point 0,0,0
-2. Sets A3dForm Camera Property
-3. Sets Forms UseDesign Camera  to false
-4. Allocates the OnKeyDown Event (if Unassigned)
+
+ 1. Adds a Camera at AX,AY,AZ and points it to the point 0,0,0
+ 2. Sets A3dForm Camera Property
+ 3. Sets Forms UseDesign Camera  to false
+ 4. Allocates the OnKeyDown Event (if Unassigned)
 
 ```
 The Cammera Controls then become
