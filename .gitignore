@@ -50,3 +50,7 @@ Temporary Items
 *.~*
 *.exe
 *.res
+*.dcu
+*.tmp
+*.dsk
+
