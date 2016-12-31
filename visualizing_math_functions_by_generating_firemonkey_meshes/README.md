@@ -8,6 +8,6 @@ Abstract: This article discusses how you can generate your own 3-dimensional mes
 
 Unfortunately changes to Firemonkey after XE2 trashed the code.
 
-I was looking at similar code and reworked Ander's Code for Berlin. This folder contains my modified code.
+I was looking at similar code and reworked Anders' Code for Berlin. This folder contains my modified code.
 
 For Descriptions etc go to the original paper.
