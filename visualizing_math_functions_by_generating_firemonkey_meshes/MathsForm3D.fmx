@@ -1,0 +1,183 @@
+object MathsForm: TMathsForm
+  Left = 0
+  Top = 0
+  Camera = Camera1
+  Caption = 'Form1'
+  Color = claAqua
+  ClientHeight = 776
+  ClientWidth = 923
+  UsingDesignCamera = False
+  Visible = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnMouseDown = FormMouseDown
+  OnMouseMove = FormMouseMove
+  OnMouseWheel = FormMouseWheel
+  DesignerMasterStyle = 0
+  object Camera1: TCamera
+    AngleOfView = 45.000000000000000000
+    Position.Y = -200.000000000000000000
+    Position.Z = -200.000000000000000000
+    RotationAngle.X = 315.000000000000000000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    Quanternion = 
+      '(-0.382683485746384,-3.22578896927439E-9,-2.96211788430867E-9,0.' +
+      '923879623413086)'
+  end
+  object Layer3D1: TLayer3D
+    Height = 250.000000000000000000
+    Position.X = 824.000000000000000000
+    Position.Y = 130.000000000000000000
+    Projection = Screen
+    Resolution = 50
+    StyleLookup = 'backgroundstyle'
+    Width = 190.000000000000000000
+    object Button1: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'sin(x*x+z*z)/(x*x+z*z)'
+      TextSettings.Font.Size = 16.000000000000000000
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'exp(sin x - cos z)'
+      TextSettings.Font.Size = 16.000000000000000000
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'exp(sin x + cos z)'
+      TextSettings.Font.Size = 16.000000000000000000
+      OnClick = Button3Click
+    end
+    object Button4: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 152.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'exp(sin('#8730'|x|)+cos('#8730'|z|))'
+      TextSettings.Font.Size = 16.000000000000000000
+      OnClick = Button4Click
+    end
+    object Button5: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 200.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'exp(arctan(sqr(x/z)))'
+      TextSettings.Font.Size = 16.000000000000000000
+      OnClick = Button5Click
+    end
+  end
+  object Layout3D1: TLayout3D
+    Height = 4.000000000000000000
+    HitTest = False
+    Scale.X = 0.100000001490116100
+    Scale.Y = 0.100000001490116100
+    Scale.Z = 0.100000001490116100
+    Width = 5.000000000000000000
+    object GridXY: TGrid3D
+      Marks = 100.000000000000000000
+      Frequency = 100.000000000000000000
+      LineColor = x50505050
+      Width = 2000.000000000000000000
+      Height = 2000.000000000000000000
+      Depth = 0.001000000047497451
+      HitTest = False
+    end
+    object GridXZ: TGrid3D
+      Marks = 100.000000000000000000
+      Frequency = 100.000000000000000000
+      LineColor = x50505050
+      RotationAngle.X = 90.000000000000000000
+      Width = 2000.000000000000000000
+      Height = 2000.000000000000000000
+      Depth = 0.001000000047497451
+      HitTest = False
+      Quanternion = '(0.70710676908493,0,0,0.70710676908493)'
+    end
+    object GridYZ: TGrid3D
+      Marks = 100.000000000000000000
+      Frequency = 100.000000000000000000
+      LineColor = x50505050
+      RotationAngle.Y = 90.000000000000000000
+      Width = 2000.000000000000000000
+      Height = 2000.000000000000000000
+      Depth = 0.001000000047497451
+      HitTest = False
+      Quanternion = '(0,0.70710676908493,0,0.70710676908493)'
+    end
+    object Mesh1: TMesh
+      Position.Z = -3.000000000000000000
+      Width = 30.000000000000000000
+      Height = 30.000000000000000000
+      Depth = 30.000000000000000000
+      TwoSide = True
+      MaterialSource = Mesh1MaterialSource
+    end
+    object Text3D1: TText3D
+      Position.Y = -500.000000000000000000
+      Position.Z = -500.000000000000000000
+      Scale.X = 2.000000000000000000
+      Scale.Y = 2.000000000000000000
+      Scale.Z = 2.000000000000000000
+      Width = 1000.000000000000000000
+      Height = 100.000000000000000000
+      Depth = 0.009999999776482582
+      Font.Size = 48.000000000000000000
+      Text = 'Select a function to graph'
+      Flatness = 1.000000000000000000
+      Sides = [Front, Back, Shaft]
+      MaterialSource = Text3D1MaterialSource
+    end
+  end
+  object Mesh1MaterialSource: TLightMaterialSource
+    Diffuse = claViolet
+    Ambient = claTomato
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 30
+  end
+  object Text3D1MaterialSource: TLightMaterialSource
+    Diffuse = claWhite
+    Ambient = claWhite
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 30
+  end
+  object Light1: TLight
+    Color = claWhite
+    LightType = Point
+    SpotCutOff = 180.000000000000000000
+    Position.X = -200.000000000000000000
+    Position.Y = -200.000000000000000000
+    Position.Z = -200.000000000000000000
+    RotationAngle.Y = 68.927848815917960000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    Quanternion = '(0,-0.565887033939362,0,-0.82448273897171)'
+  end
+end

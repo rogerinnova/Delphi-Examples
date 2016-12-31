@@ -1,0 +1,96 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{44713FD2-3D03-4BE9-9911-74155E41C73D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Moving Camera Project\Camera.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\HgRepository\TeamDagamer\For Git\DynamicBuild\DynamicWorldBuildSample.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\HgRepository\TeamDagamer\For Git\Build3DLandscape\DynamcBuildLandScape.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ThreeDShapes Rod\Is3D.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ThreeDShapes Rod\Rod3DDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="visualizing_math_functions_by_generating_firemonkey_meshes\RevisedMaths3D.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Camera">
+        <MSBuild Projects="Moving Camera Project\Camera.dproj"/>
+    </Target>
+    <Target Name="Camera:Clean">
+        <MSBuild Projects="Moving Camera Project\Camera.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Camera:Make">
+        <MSBuild Projects="Moving Camera Project\Camera.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DynamicWorldBuildSample">
+        <MSBuild Projects="..\..\HgRepository\TeamDagamer\For Git\DynamicBuild\DynamicWorldBuildSample.dproj"/>
+    </Target>
+    <Target Name="DynamicWorldBuildSample:Clean">
+        <MSBuild Projects="..\..\HgRepository\TeamDagamer\For Git\DynamicBuild\DynamicWorldBuildSample.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DynamicWorldBuildSample:Make">
+        <MSBuild Projects="..\..\HgRepository\TeamDagamer\For Git\DynamicBuild\DynamicWorldBuildSample.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DynamcBuildLandScape">
+        <MSBuild Projects="..\..\HgRepository\TeamDagamer\For Git\Build3DLandscape\DynamcBuildLandScape.dproj"/>
+    </Target>
+    <Target Name="DynamcBuildLandScape:Clean">
+        <MSBuild Projects="..\..\HgRepository\TeamDagamer\For Git\Build3DLandscape\DynamcBuildLandScape.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DynamcBuildLandScape:Make">
+        <MSBuild Projects="..\..\HgRepository\TeamDagamer\For Git\Build3DLandscape\DynamcBuildLandScape.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Is3D">
+        <MSBuild Projects="ThreeDShapes Rod\Is3D.dproj"/>
+    </Target>
+    <Target Name="Is3D:Clean">
+        <MSBuild Projects="ThreeDShapes Rod\Is3D.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Is3D:Make">
+        <MSBuild Projects="ThreeDShapes Rod\Is3D.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Rod3DDemo">
+        <MSBuild Projects="ThreeDShapes Rod\Rod3DDemo.dproj"/>
+    </Target>
+    <Target Name="Rod3DDemo:Clean">
+        <MSBuild Projects="ThreeDShapes Rod\Rod3DDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Rod3DDemo:Make">
+        <MSBuild Projects="ThreeDShapes Rod\Rod3DDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RevisedMaths3D">
+        <MSBuild Projects="visualizing_math_functions_by_generating_firemonkey_meshes\RevisedMaths3D.dproj"/>
+    </Target>
+    <Target Name="RevisedMaths3D:Clean">
+        <MSBuild Projects="visualizing_math_functions_by_generating_firemonkey_meshes\RevisedMaths3D.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RevisedMaths3D:Make">
+        <MSBuild Projects="visualizing_math_functions_by_generating_firemonkey_meshes\RevisedMaths3D.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Camera;DynamicWorldBuildSample;DynamcBuildLandScape;Is3D;Rod3DDemo;RevisedMaths3D"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Camera:Clean;DynamicWorldBuildSample:Clean;DynamcBuildLandScape:Clean;Is3D:Clean;Rod3DDemo:Clean;RevisedMaths3D:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Camera:Make;DynamicWorldBuildSample:Make;DynamcBuildLandScape:Make;Is3D:Make;Rod3DDemo:Make;RevisedMaths3D:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
