@@ -1,0 +1,185 @@
+object DemoForm3DShapesWithTexture: TDemoForm3DShapesWithTexture
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  Color = claSalmon
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Cube1: TCube
+    Position.X = -6.663113117218018000
+    Position.Y = -2.909512996673584000
+    Scale.X = 5.000000000000000000
+    Scale.Y = 5.000000000000000000
+    Scale.Z = 5.000000000000000000
+    RotationAngle.X = 12.137802124023440000
+    RotationAngle.Y = 11.419462203979490000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    Opacity = 0.699999988079071000
+    MaterialSource = LightMaterialSource1
+    Quanternion = 
+      '(0.105199955403805,0.0989309996366501,0.0105183776468039,0.98946' +
+      '1779594421)'
+    object FloatAnimation2: TFloatAnimation
+      Enabled = True
+      Duration = 10.000000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle.Y'
+      StartValue = 0.000000000000000000
+      StopValue = 360.000000000000000000
+    end
+    object FloatAnimation5: TFloatAnimation
+      Enabled = True
+      Delay = 20.000000000000000000
+      Duration = 20.000000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle.Z'
+      StartValue = 0.000000000000000000
+      StopValue = 360.000000000000000000
+    end
+  end
+  object Light1: TLight
+    Color = claWhite
+    LightType = Directional
+    SpotCutOff = 180.000000000000000000
+    Position.X = -9.676333427429199000
+    Position.Y = 7.055201053619385000
+    RotationAngle.Y = 2.602090358734131000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    Quanternion = '(0,0.0227056741714478,0,0.999742209911346)'
+  end
+  object LightMaterialSource1: TLightMaterialSource
+    Diffuse = claLinen
+    Ambient = claNull
+    Emissive = claNull
+    Specular = claCrimson
+    Texture.PNG = {
+      89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+      F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      0115494441545847ED938D0A83300C8475EFFFCE5B2BB5E43F17D70D07FB40B4
+      697AB926B8FDF9159EE341A9E643A0A21F297E22C5B375CA63BC51F6F18E4072
+      26A5648277CBB25EB503CBA93A46E70BEBDEAE03E70D59BC05D5CD7B024DB65A
+      D3E2A9BED7014BEF5D4C4DE9B033132317F4D6F4DB4214614BAB03CA540FA860
+      4090AFC2DE08AA35335C3DE82FE8ED8D5A2CA9E4977EC3AC2DD9BE45F417542E
+      9DE1EA5906DCC299AB6CBFA1B6A5019A50ED6604D56226BC11B0E257666B9C31
+      25A4812BB52A287DAF030C60B60AF40C646001AE1FCF807960C17C94A665C074
+      8A1018A461A62F0DD0CDBD9D3A9EB13E362BEEC4F9A943F1466026670006BB2E
+      D32E156AE253BF1F3C17F4BBD3D6B0EEB7FE82BBB26D2F52E5402C0F03C6AE00
+      00000049454E44AE426082}
+    Shininess = 30
+    Left = 304
+    Top = 224
+  end
+  object Timer1: TTimer
+    Interval = 10000
+    OnTimer = Timer1Timer
+    Left = 312
+    Top = 232
+  end
+  object Light2: TLight
+    Color = claWhite
+    LightType = Directional
+    SpotCutOff = 180.000000000000000000
+    Position.X = -10.552432060241700000
+    Position.Y = 6.209538936614990000
+    RotationAngle.X = 316.607421875000000000
+    RotationAngle.Y = 308.731018066406300000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    Quanternion = 
+      '(0.333299040794373,0.401978999376297,0.159936621785164,-0.837701' +
+      '797485352)'
+  end
+  object Cylinder1: TCylinder
+    Position.X = 1.827902793884277000
+    Position.Y = -3.199545145034790000
+    Scale.X = 5.000000000000000000
+    Scale.Y = 5.000000000000000000
+    Scale.Z = 5.000000000000000000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    TwoSide = True
+    MaterialSource = LightMaterialSource2
+    object FloatAnimation1: TFloatAnimation
+      Enabled = True
+      Duration = 10.000000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle.Y'
+      StartValue = 0.000000000000000000
+      StopValue = 360.000000000000000000
+    end
+    object FloatAnimation6: TFloatAnimation
+      Enabled = True
+      Delay = 20.000000000000000000
+      Duration = 20.000000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle.Z'
+      StartValue = 0.000000000000000000
+      StopValue = 360.000000000000000000
+    end
+  end
+  object LightMaterialSource2: TLightMaterialSource
+    Diffuse = claLightyellow
+    Ambient = claNull
+    Emissive = claNull
+    Specular = claCrimson
+    Texture.PNG = {
+      89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+      F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      0115494441545847ED938D0A83300C8475EFFFCE5B2BB5E43F17D70D07FB40B4
+      697AB926B8FDF9159EE341A9E643A0A21F297E22C5B375CA63BC51F6F18E4072
+      26A5648277CBB25EB503CBA93A46E70BEBDEAE03E70D59BC05D5CD7B024DB65A
+      D3E2A9BED7014BEF5D4C4DE9B033132317F4D6F4DB4214614BAB03CA540FA860
+      4090AFC2DE08AA35335C3DE82FE8ED8D5A2CA9E4977EC3AC2DD9BE45F417542E
+      9DE1EA5906DCC299AB6CBFA1B6A5019A50ED6604D56226BC11B0E257666B9C31
+      25A4812BB52A287DAF030C60B60AF40C646001AE1FCF807960C17C94A665C074
+      8A1018A461A62F0DD0CDBD9D3A9EB13E362BEEC4F9A943F1466026670006BB2E
+      D32E156AE253BF1F3C17F4BBD3D6B0EEB7FE82BBB26D2F52E5402C0F03C6AE00
+      00000049454E44AE426082}
+    Shininess = 30
+    Left = 320
+    Top = 240
+  end
+  object Cone1: TCone
+    Position.X = 5.056438922882080000
+    Position.Y = 3.852750301361084000
+    Scale.X = 5.000000000000000000
+    Scale.Y = 5.000000000000000000
+    Scale.Z = 5.000000000000000000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    TwoSide = True
+    MaterialSource = LightMaterialSource2
+    object FloatAnimation3: TFloatAnimation
+      Enabled = True
+      Duration = 10.000000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle.Y'
+      StartValue = 0.000000000000000000
+      StopValue = 360.000000000000000000
+    end
+    object FloatAnimation4: TFloatAnimation
+      Enabled = True
+      Delay = 20.000000000000000000
+      Duration = 20.000000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle.Z'
+      StartValue = 0.000000000000000000
+      StopValue = 360.000000000000000000
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 312
+    Top = 336
+  end
+end

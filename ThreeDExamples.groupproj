@@ -21,6 +21,12 @@
         <Projects Include="visualizing_math_functions_by_generating_firemonkey_meshes\RevisedMaths3D.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="playing_with_bitmaps_and_3D_textures\Bitmap3DExamples.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="playing_with_bitmaps_and_3D_textures\BitmapBuildExamples.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -83,14 +89,32 @@
     <Target Name="RevisedMaths3D:Make">
         <MSBuild Projects="visualizing_math_functions_by_generating_firemonkey_meshes\RevisedMaths3D.dproj" Targets="Make"/>
     </Target>
+    <Target Name="Bitmap3DExamples">
+        <MSBuild Projects="playing_with_bitmaps_and_3D_textures\Bitmap3DExamples.dproj"/>
+    </Target>
+    <Target Name="Bitmap3DExamples:Clean">
+        <MSBuild Projects="playing_with_bitmaps_and_3D_textures\Bitmap3DExamples.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Bitmap3DExamples:Make">
+        <MSBuild Projects="playing_with_bitmaps_and_3D_textures\Bitmap3DExamples.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BitmapBuildExamples">
+        <MSBuild Projects="playing_with_bitmaps_and_3D_textures\BitmapBuildExamples.dproj"/>
+    </Target>
+    <Target Name="BitmapBuildExamples:Clean">
+        <MSBuild Projects="playing_with_bitmaps_and_3D_textures\BitmapBuildExamples.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BitmapBuildExamples:Make">
+        <MSBuild Projects="playing_with_bitmaps_and_3D_textures\BitmapBuildExamples.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="Camera;DynamicWorldBuildSample;DynamcBuildLandScape;Is3D;Rod3DDemo;RevisedMaths3D"/>
+        <CallTarget Targets="Camera;DynamicWorldBuildSample;DynamcBuildLandScape;Is3D;Rod3DDemo;RevisedMaths3D;Bitmap3DExamples;BitmapBuildExamples"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="Camera:Clean;DynamicWorldBuildSample:Clean;DynamcBuildLandScape:Clean;Is3D:Clean;Rod3DDemo:Clean;RevisedMaths3D:Clean"/>
+        <CallTarget Targets="Camera:Clean;DynamicWorldBuildSample:Clean;DynamcBuildLandScape:Clean;Is3D:Clean;Rod3DDemo:Clean;RevisedMaths3D:Clean;Bitmap3DExamples:Clean;BitmapBuildExamples:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="Camera:Make;DynamicWorldBuildSample:Make;DynamcBuildLandScape:Make;Is3D:Make;Rod3DDemo:Make;RevisedMaths3D:Make"/>
+        <CallTarget Targets="Camera:Make;DynamicWorldBuildSample:Make;DynamcBuildLandScape:Make;Is3D:Make;Rod3DDemo:Make;RevisedMaths3D:Make;Bitmap3DExamples:Make;BitmapBuildExamples:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

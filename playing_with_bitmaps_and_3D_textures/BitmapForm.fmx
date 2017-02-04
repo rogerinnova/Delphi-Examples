@@ -1,0 +1,215 @@
+object FormTestBitmap: TFormTestBitmap
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  StyleBook = StyleBook1
+  StyleLookup = 'calloutpanelstyle'
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label6: TLabel
+    Position.X = 392.000000000000000000
+    Position.Y = 288.000000000000000000
+    Scale.Y = 5.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Some Text on Form'
+  end
+  object Label5: TLabel
+    Position.X = 256.000000000000000000
+    Position.Y = 288.000000000000000000
+    Scale.Y = 5.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Some Text on Form'
+  end
+  object Label4: TLabel
+    Position.X = 136.000000000000000000
+    Position.Y = 288.000000000000000000
+    Scale.Y = 5.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Some Text on Form'
+  end
+  object Label3: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 288.000000000000000000
+    Scale.Y = 5.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Some Text on Form'
+  end
+  object Label1: TLabel
+    Position.X = 392.000000000000000000
+    Position.Y = 136.000000000000000000
+    Scale.Y = 5.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Some Text on Form'
+  end
+  object Label2: TLabel
+    Position.X = 9.000000000000000000
+    Position.Y = 49.000000000000000000
+    Scale.X = 5.000000000000000000
+    Scale.Y = 10.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Some Text on Form'
+  end
+  object ImageControl1: TImageControl
+    Position.X = 32.000000000000000000
+    Position.Y = 32.000000000000000000
+    TabOrder = 0
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 304
+    Top = 224
+  end
+  object ImageControl2: TImageControl
+    Position.X = 152.000000000000000000
+    Position.Y = 32.000000000000000000
+    TabOrder = 2
+  end
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 41.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 88.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+  end
+  object ImageControl3: TImageControl
+    Position.X = 272.000000000000000000
+    Position.Y = 32.000000000000000000
+    TabOrder = 5
+  end
+  object Image2: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 153.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 95.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+  end
+  object Image3: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 273.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 95.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+  end
+  object Image4: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 393.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 95.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+  end
+  object ImageControl4: TImageControl
+    Position.X = 392.000000000000000000
+    Position.Y = 32.000000000000000000
+    TabOrder = 4
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 7'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501060C50616E656C315374796C653103B00000
+          545046300A5452656374616E676C6500095374796C654E616D65060C50616E65
+          6C315374796C653105416C69676E070643656E7465720A46696C6C2E436F6C6F
+          720708636C61417A7572650748697454657374080A53697A652E576964746805
+          000000000000409E08400B53697A652E48656967687405000000000000808807
+          401453697A652E506C6174666F726D44656661756C74080C5374726F6B652E43
+          6F6C6F720708636C6157686974650000}
+      end>
+  end
+  object Image5: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 41.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 88.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+  end
+  object Image6: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 153.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 95.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+  end
+  object Image7: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 273.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 95.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+  end
+  object Image8: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 393.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 95.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+  end
+  object Label7: TLabel
+    Position.X = 32.000000000000000000
+    Position.Y = 264.000000000000000000
+    Scale.Y = 5.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 9.000000000000000000
+    Size.PlatformDefault = False
+    Text = '0,0             j=1,k=0'
+  end
+  object Label8: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 392.000000000000000000
+    Scale.Y = 5.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 9.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'j=0 k=1       j=1,k=1'
+  end
+end
