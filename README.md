@@ -5,7 +5,7 @@ available in a more friendly manner
 
 *Introducing Delphi "Flying Camera" ( "First Person Shooter")
 
-*Rod3DDemo Demo Project
+*Rod3DDemo Demo Project (http://www.adug.org.au/technical/ide/three-dimensional-firemonkey-component-design/)
 
 *Visualizing Math Functions By Generating Firemonkey Meshes
 
