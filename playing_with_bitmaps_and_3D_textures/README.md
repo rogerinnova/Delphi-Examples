@@ -19,3 +19,5 @@ A single form (BitmapForm.pas) with multiple image components which are loaded p
 
 ##The Project Bitmap3DExamples
 A single form project (BitMap3DForm) which looks at the use of Texture, Opacity and TwoSided on the 3D shapes components on the form.
+
+More Info at http://delphinotes.innovasolutions.com.au/posts/playing-with-colors-bitmaps-and-textures-in-delphi/
