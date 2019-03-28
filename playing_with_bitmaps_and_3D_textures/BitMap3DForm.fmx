@@ -182,32 +182,4 @@ object DemoForm3DShapesWithTexture: TDemoForm3DShapesWithTexture
     Left = 312
     Top = 336
   end
-  object Sphere1: TSphere
-    Position.X = -3.648998737335205000
-    Position.Y = 4.055784702301025000
-    Scale.X = 3.000000000000000000
-    Scale.Y = 3.000000000000000000
-    Scale.Z = 3.000000000000000000
-    Width = 1.000000000000000000
-    Height = 1.000000000000000000
-    Depth = 1.000000000000000000
-    MaterialSource = LightMaterialSource1
-    object FloatAnimation7: TFloatAnimation
-      Enabled = True
-      Duration = 10.000000000000000000
-      Loop = True
-      PropertyName = 'RotationAngle.Y'
-      StartValue = 0.000000000000000000
-      StopValue = 360.000000000000000000
-    end
-    object FloatAnimation8: TFloatAnimation
-      Enabled = True
-      Delay = 20.000000000000000000
-      Duration = 20.000000000000000000
-      Loop = True
-      PropertyName = 'RotationAngle.Z'
-      StartValue = 0.000000000000000000
-      StopValue = 360.000000000000000000
-    end
-  end
 end

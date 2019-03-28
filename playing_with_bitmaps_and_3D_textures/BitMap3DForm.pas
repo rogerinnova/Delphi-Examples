@@ -25,9 +25,6 @@ type
     FloatAnimation4: TFloatAnimation;
     FloatAnimation5: TFloatAnimation;
     FloatAnimation6: TFloatAnimation;
-    Sphere1: TSphere;
-    FloatAnimation7: TFloatAnimation;
-    FloatAnimation8: TFloatAnimation;
     procedure Timer1Timer(Sender: TObject);
   private
     { Private declarations }
